@@ -21,6 +21,11 @@ jobs:
         run :
           docker build -t test .
       - name: run docker image
-        run :
-          docker run test
+        run : docker run test
+
+      - name: docker tag
+        run : docker tag test:latest thinois/projet_tests:test_docker
+
+      - name : docker push
+        run: docker push thinois/projet_tests:test_docker
 
