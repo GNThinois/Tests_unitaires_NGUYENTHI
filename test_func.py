@@ -7,4 +7,4 @@ def test_init():
     expected_result = 80
     assert user_test1.life_points == expected_result
 
-print('tests finis .')
+print('tests finis.')
