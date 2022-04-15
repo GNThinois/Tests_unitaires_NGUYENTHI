@@ -1,15 +1,15 @@
 name: CI
 on: [push]
 jobs:
-  name of job:
+  test_build_run:
     runs-on: ubuntu:latest
     steps:
       - uses: actions/checkout@v2
       - name: Run tests
         run : |
-          sudo pip install pytest
-          sudo pytest
-      - name : sudo build docker image
+          pip install pytest
+          pytest
+      - name : build docker image
         run:
-          sudo docker run test
+          docker run test
       -name: push docker image
