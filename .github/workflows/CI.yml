@@ -1,0 +1,15 @@
+name: CI
+on: [push]
+jobs:
+  name of job:
+    runs-on: ubuntu:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run : |
+          sudo pip install pytest
+          sudo pytest
+      - name : sudo build docker image
+        run:
+          sudo docker run test
+      -name: push docker image

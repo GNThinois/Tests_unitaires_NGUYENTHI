@@ -28,4 +28,4 @@ def fight(fighter1, fighter2):
         print(fighter1.name + " wins")
 
 
-#fight(user_1, user_2)
+fight(user_1, user_2)
