@@ -12,4 +12,6 @@ jobs:
       - name : build docker image
         run:
           docker run test
-      -name: push docker image
+      - name: push docker image
+        run :
+        docker run test
