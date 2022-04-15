@@ -6,7 +6,7 @@ RUN apt-get install python3 -y
 
 RUN apt-get install python3-pip -y
 
-RUN apt-get install numpy -y
+RUN pip install numpy
 
 WORKDIR /Tests_unit
 
